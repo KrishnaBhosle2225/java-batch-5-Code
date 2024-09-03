@@ -1,6 +1,6 @@
-package data_types;
+package Day_1;
 
-public class Basics {
+public class DataTypes {
 
     public static void main(String[] args) {
 
