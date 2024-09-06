@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de713812-4fa6-4a9b-8406-7681e328f43e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Day_3/Operators.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day_4/ConditionalStatements.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Day_4/Looping.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,13 +44,26 @@
     &quot;last_opened_file_path&quot;: &quot;G:/ASCII Education/Java Batch 5/Java Batch 5 Code&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Operators">
+  <component name="RunManager" selected="Application.Looping">
     <configuration name="Basics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day_1.data_types.Basics" />
       <module name="Java Batch 5" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="Day_1.data_types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ConditionalStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_4.ConditionalStatements" />
+      <module name="Java Batch 5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Day_4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -70,22 +84,15 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Day_zero.First" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_zero.First" />
+    <configuration name="Looping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Day_4.Looping" />
       <module name="Java Batch 5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_zero.*" />
+          <option name="PATTERN" value="Day_4.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <module name="Java Batch 5" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -105,11 +112,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Looping" />
+        <item itemvalue="Application.ConditionalStatements" />
         <item itemvalue="Application.Operators" />
         <item itemvalue="Application.DataTypes2" />
         <item itemvalue="Application.Basics" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Day_zero.First" />
       </list>
     </recent_temporary>
   </component>
