@@ -5,9 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de713812-4fa6-4a9b-8406-7681e328f43e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Day_4/ConditionalStatements.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Day_4/Looping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Revision/If_else.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Revision/looping2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day_2/DataTypes2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day_2/DataTypes2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Day_4/Looping.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Day_4/Looping.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,20 +46,7 @@
     &quot;last_opened_file_path&quot;: &quot;G:/ASCII Education/Java Batch 5/Java Batch 5 Code&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.Looping">
-    <configuration name="Basics" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_1.data_types.Basics" />
-      <module name="Java Batch 5" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="Day_1.data_types.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.looping2">
     <configuration name="ConditionalStatements" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day_4.ConditionalStatements" />
       <module name="Java Batch 5" />
@@ -84,6 +73,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="If_else" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Revision.If_else" />
+      <module name="Java Batch 5" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Revision.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Looping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Day_4.Looping" />
       <module name="Java Batch 5" />
@@ -97,12 +99,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Operators" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Day_3.Operators" />
+    <configuration name="looping2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Revision.looping2" />
       <module name="Java Batch 5" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Day_3.*" />
+          <option name="PATTERN" value="Revision.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.looping2" />
+        <item itemvalue="Application.If_else" />
         <item itemvalue="Application.Looping" />
-        <item itemvalue="Application.ConditionalStatements" />
-        <item itemvalue="Application.Operators" />
         <item itemvalue="Application.DataTypes2" />
-        <item itemvalue="Application.Basics" />
+        <item itemvalue="Application.ConditionalStatements" />
       </list>
     </recent_temporary>
   </component>

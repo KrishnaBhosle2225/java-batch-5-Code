@@ -30,7 +30,7 @@ public class DataTypes2 {
 //        int[] data = {1, 2,3,4,5,1,2,3,4,5};
 
 //        String name= "Ascii education";
-        String work = "Teaching Programming languages";
+//        String work = "Teaching Programming languages";
 
 //        System.out.print(name);
 //        System.out.println(work);
@@ -43,13 +43,19 @@ public class DataTypes2 {
         int $usd = 100;
         boolean no = false;
 
-        String dgkfbkfgbkfgbfgbfgfgbfgbgbjggbfjhgbfjgbdfjgbfjgfdgjbfg = "fsdf";
-        System.out.println(dgkfbkfgbkfgbfgbfgfgbfgbgbjggbfjhgbfjgbdfjgbfjgfdgjbfg);
 
         int roll_no = 10;
-        System.out.println(roll_no);
+//        System.out.println(roll_no);
 
 //        int @a = 323;
+
+
+        //diff bet print & println
+//        System.out.print("my name is");
+//        System.out.print("Shripad");
+
+        System.out.println("my name is");
+        System.out.println("Shripad");
 
     }
 }

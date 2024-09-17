@@ -13,10 +13,13 @@ public class Looping {
 //        }
 
         //do -while home work
+        do{
+            System.out.println("I am krishna");
+        }while(true);
 
         //for loop
-        for(int i=1; i<=10; i++){
-            System.out.println(i);
-        }
+//        for(int i=1; i<=10; i++){
+//            System.out.println(i);
+//        }
     }
 }
