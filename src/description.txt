@@ -1,0 +1,75 @@
+#!/bin/bash
+
+# Paths to pom.xml files
+KEYLINK_POM="keylink-repo/pom.xml"
+CURRENT_PROJECT_POM="pom.xml"
+
+# Check if pom.xml files exist
+if [ ! -f "$KEYLINK_POM" ]; then
+  echo "Keylink pom.xml not found!"
+  exit 1
+fi
+
+if [ ! -f "$CURRENT_PROJECT_POM" ]; then
+  echo "Current project pom.xml not found!"
+  exit 1
+fi
+
+# Function to check if a dependency already exists in the current project's pom.xml
+dependency_exists() {
+  local groupId=$1
+  local artifactId=$2
+  grep -q "<groupId>$groupId</groupId>.*<artifactId>$artifactId</artifactId>" $CURRENT_PROJECT_POM
+}
+
+# Function to add a new dependency to the current project's pom.xml
+add_dependency() {
+  local groupId=$1
+  local artifactId=$2
+  local version=$3
+
+  echo "Adding $groupId:$artifactId:$version to $CURRENT_PROJECT_POM..."
+
+  # Insert into the <dependencies> section before the closing </dependencies> tag
+  sed -i "/<\/dependencies>/ i \
+  <dependency>\n\
+    <groupId>$groupId</groupId>\n\
+    <artifactId>$artifactId</artifactId>\n\
+    <version>$version</version>\n\
+  </dependency>\n" $CURRENT_PROJECT_POM
+}
+
+# Extract all dependencies from the Keylink pom.xml
+artifacts=$(xmllint --xpath "//*[local-name()='dependency']/*[local-name()='groupId' or local-name()='artifactId' or local-name()='version']" $KEYLINK_POM 2>/dev/null)
+
+groupId=""
+artifactId=""
+version=""
+
+while IFS= read -r line; do
+  if [[ $line == *"<groupId>"* ]]; then
+    groupId=$(echo $line | grep -oP '(?<=<groupId>).*?(?=</groupId>)')
+  elif [[ $line == *"<artifactId>"* ]]; then
+    artifactId=$(echo $line | grep -oP '(?<=<artifactId>).*?(?=</artifactId>)')
+  elif [[ $line == *"<version>"* ]]; then
+    version=$(echo $line | grep -oP '(?<=<version>).*?(?=</version>)')
+  fi
+
+  # If we have all three, process the dependency
+  if [[ -n "$groupId" && -n "$artifactId" && -n "$version" ]]; then
+    # Check if the dependency exists in the current project's pom.xml
+    if ! dependency_exists "$groupId" "$artifactId"; then
+      # Add the dependency if it does not exist
+      add_dependency "$groupId" "$artifactId" "$version"
+    else
+      echo "$groupId:$artifactId already exists in the current project."
+    fi
+
+    # Reset for next dependency
+    groupId=""
+    artifactId=""
+    version=""
+  fi
+done <<< "$artifacts"
+
+echo "Dependency update complete!"
